@@ -7,6 +7,7 @@ export default function App() {
       <main>
         <Meme />
       </main>
+      
     </div>
   );
 }

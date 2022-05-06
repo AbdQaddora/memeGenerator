@@ -25,7 +25,8 @@ main form {
     box-shadow: 0px 0px 3px 0px #a818da;
 }
 
-.form-btn {
+.form-btn,
+.download {
     grid-column: 1/3;
     background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
     border-radius: 5px;
@@ -38,22 +39,26 @@ main form {
     justify-content: center;
     align-items: center;
     user-select: none;
+    cursor: pointer;
 }
 
 .form-btn img {
     width: 22px;
     margin-inline-start: 5px;
 }
+
 .meme {
     position: relative;
     width: 100%;
+    margin: 15px 0 10px;
+    height: fit-content;
 }
 
 .memeImg {
-    margin-top: 15px;
     width: 100%;
+    margin: 0;
+    padding: 0;
     box-shadow: 0px 0px 3px 0px #ccc;
-    border-radius: 7px;
 }
 
 .meme-text {
@@ -71,6 +76,7 @@ main form {
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: #000000;
 }
+
 .top {
     top: 25px;
 }
@@ -79,8 +85,19 @@ main form {
     bottom: 25px;
 }
 
-@media screen and (max-width:640px){
-    main{
+.download {
+    width: 100%;
+    padding: 7px;
+}
+
+.download img {
+    position: relative;
+    margin-left: 7px;
+    top: 2px;
+}
+
+@media screen and (max-width:640px) {
+    main {
         padding: 25px 5px;
         max-width: 100%;
     }
@@ -89,14 +106,14 @@ main form {
         grid-template-columns: 1fr;
     }
 
-    .meme-text{
+    .meme-text {
         font-size: 1.5rem;
         letter-spacing: 0.3px;
         -webkit-text-stroke: 1px;
         -webkit-text-stroke-color: #000000;
     }
 
-    .form-btn{
+    .form-btn {
         grid-column: 1/2;
         height: 40px;
     }
